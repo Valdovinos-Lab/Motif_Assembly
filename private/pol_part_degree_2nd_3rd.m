@@ -92,6 +92,6 @@ function [] = pol_part_degree_2nd_3rd(params_vector, output)
         pol_data.GenPart4000 = gen_part_4000';
         pol_data.SpcPartPart4000 = spc_part_part_4000';
         pol_data.GenPartPart4000 = gen_part_part_4000';
-        writetable(pol_data, sprintf('%s/lifespans/pollinators_p%.1f_a%.1f.csv', output, params.SpcPlantProb, params.SpcPolProb));
+        writetable(pol_data, sprintf('%s/motifs/pollinators_p%.1f_a%.1f.csv', output, params.SpcPlantProb, params.SpcPolProb));
     end 
 end

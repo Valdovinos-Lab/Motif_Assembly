@@ -91,6 +91,6 @@ function [] = plant_part_degree_2nd_3rd(params_vector, output)
         plant_data.GenPart4000 = gen_part_4000';
         plant_data.SpcPartPart4000 = spc_part_part_4000';
         plant_data.GenPartPart4000 = gen_part_part_4000';
-        writetable(plant_data, sprintf('%s/lifespans/plants_p%.1f_a%.1f.csv', output, params.SpcPlantProb, params.SpcPolProb));
+        writetable(plant_data, sprintf('%s/motifs/plants_p%.1f_a%.1f.csv', output, params.SpcPlantProb, params.SpcPolProb));
     end 
 end
