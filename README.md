@@ -29,7 +29,7 @@ The expected runtime is ...
 
 ## Instructions for Use
 
-To reproduce data from the paper, just run the simulation as is. If you would like to edit the assembly parameters (ex. time span, colonization frequency, number of colonizers per colonization event) you can do so by editing the params variable in run_assembly_AF1.m and run_assembly_AF0.m. For instance, if you wanted to experiment with colonizers entering the network every 500 timesteps you would make the following changes:
+To reproduce data from the paper, just run the simulation as is. If you would like to edit the assembly parameters (ex. time span, colonization frequency, number of colonizers per colonization event) you can do so by editing the "params" variable in run_assembly_AF1.m and run_assembly_AF0.m. For instance, if you wanted to experiment with colonizers entering the network every 500 timesteps you would make the following changes:
 
 ```matlab
 params = Parameters(output_dir, ...
