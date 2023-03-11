@@ -19,12 +19,6 @@ run_assembly_AF1('03_10_2023', 'AF1')
 run_assembly_AF0('03_10_2023', 'AF0')
 ```
 
-The output folders ```03_10_2023/AF1``` and ```03_10_2023/AF0``` will include:
-
-* ```data_table.csv``` a table containing network summary statistics for each assembly simulation. To add nestedness values to this table run ```nodfc.R``` which calculates nestedness with the maxnodf R package.
-* ```motifs``` folder containing information to categorize each colonizer from each assembly simulation into their motif groups. 
-* ```output_p*_a*``` folders containing detailed simulation output, the values following "p" and "a" correspond with the probability that colonizers are specialists for plants and pollinators, respectively.
-
 The expected runtime is ... To demo the assembly model without running the whole thing try only running the case where the probability for coloning plants and pollinators to be specialist is 0.5 by making the following changes to run_assembly_AF1.m and run_assembly_AF0.m.
 
 ```matlab
@@ -32,7 +26,11 @@ for spc_plant_prob = 0.5 % changed from 0:0.1:1
         for spc_pol_prob = 0.5 % changed from 0:0.1:1
 ```
 
+The output folders ```03_10_2023/AF1``` and ```03_10_2023/AF0``` will include:
 
+* ```data_table.csv``` a table containing network summary statistics for each assembly simulation. To add nestedness values to this table run ```nodfc.R``` which calculates nestedness with the maxnodf R package.
+* ```motifs``` folder containing information to categorize each colonizer from each assembly simulation into their motif groups. 
+* ```output_p*_a*``` folders containing detailed simulation output, the values following "p" and "a" correspond with the probability that colonizers are specialists for plants and pollinators, respectively.
 
 ## Instructions for Use
 
@@ -40,7 +38,7 @@ To reproduce data from the paper, just run the simulation as is. If you would li
 
 ```matlab
 params = Parameters(output_dir, ...
-                        'TimeStep', 500, ... %changed from 2000 to 500
+                        'TimeStep', 500, ... %changed from 2000 
                         'EndTime', 100000, ...
                         'SpcPlantProb', spc_plant_prob, ...
                         'SpcPolProb', spc_pol_prob, ...
