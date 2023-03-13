@@ -32,6 +32,8 @@ The output folders ```03_13_2023/AF1``` and ```03_13_2023/AF0``` will include:
 * ```motifs``` folder containing information to categorize each colonizer from each assembly simulation into their motif groups. 
 * ```output_p*_a*``` folders containing detailed simulation output, the values following "p" and "a" correspond with the probability that colonizers are specialists for plants and pollinators, respectively.
 
+To perform motif analysis and compare final network structures, run ```analysis.ipynb```. In that file you will again specify the date and directory name as well as the species guild you are analyzing. 
+
 ## Instructions for Use
 
 To reproduce data from the paper, just run the simulation as is. If you would like to edit the assembly parameters (ex. time span, colonization frequency, number of colonizers per colonization event) you can do so by editing the "params" variable in run_assembly_AF1.m and run_assembly_AF0.m. For instance, if you wanted to experiment with colonizers entering the network every 500 timesteps you would make the following changes:
