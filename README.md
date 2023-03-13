@@ -19,7 +19,7 @@ run_assembly_AF1('03_10_2023', 'AF1')
 run_assembly_AF0('03_10_2023', 'AF0')
 ```
 
-The expected runtime is ... To demo the assembly model without running the whole thing try only running the case where the probability for coloning plants and pollinators to be specialist is 0.5 by making the following changes to run_assembly_AF1.m and run_assembly_AF0.m.
+The expected runtime is ~45 minutes for each group (90 minutes total). To demo the assembly model without running the whole thing try only running the case where the probability for coloning plants and pollinators to be specialist is 0.5 by making the following changes to run_assembly_AF1.m and run_assembly_AF0.m.
 
 ```matlab
 for spc_plant_prob = 0.5 % changed from 0:0.1:1
