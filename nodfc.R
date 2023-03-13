@@ -4,8 +4,7 @@ library(maxnodf)
 date = '03_13_2023' #add date here
 af0_dir = 'AF0' #add directory name here for assembly w/ AF
 af1_dir = 'AF1' #add directory name here for assembly w/o AF
-#spc_prob <- c(0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
-spc_prob <- 0.5
+spc_prob <- c(0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0) #for testing can change to: spc_prob <- 0.5
 snapshots <- seq(8000, 100000, 2000) 
 af0_nodfc <- rep(NA, length(spc_prob) * length(spc_prob) * length(snapshots))
 af1_nodfc <- rep(NA, length(spc_prob) * length(spc_prob) * length(snapshots))
