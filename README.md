@@ -4,7 +4,7 @@
 
 * Plant-Pollinator_Network_Builder.mltbx included in this repository. 
 * The function ```nodfc.R``` used to calculate the nestedness of each assembled network requires the use of R packages R.matlab (version 3.7.0) and maxnodf (version 1.0.0)
-* This code was run using MATLAB_R2021b
+* This code was run using MATLAB_R2021b and MATLAB R2023a
 
 ## Installation Guide 
 
