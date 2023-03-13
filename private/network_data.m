@@ -1,12 +1,12 @@
 function [table] = network_data(parameters)
 
     % table for storing data
-    num_timesteps = parameters.EndTime / parameters.TimeStep - 2;
-    table = zeros(num_timesteps,29);
+    num_timesteps = parameters.EndTime / parameters.TimeStep - 3;
+    table = zeros(num_timesteps,17);
     index = 1;
 
     % iterate through each introduction in the simulation
-    for i = 6000:2000:parameters.EndTime
+    for i = 8000:2000:parameters.EndTime
 
         % load data from each snapshot
         output = parameters.OutputDirectoryPath;

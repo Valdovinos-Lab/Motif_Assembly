@@ -1,5 +1,7 @@
 function [] = plant_part_degree_2nd_3rd(params_vector, output)
     
+    mkdir(sprintf('%s/motifs/', output));
+    
     for p = 1:length(params_vector)
         params = params_vector(p);
 

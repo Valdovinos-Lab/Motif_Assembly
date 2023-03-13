@@ -1,4 +1,4 @@
-function [] = run_assembly_pop(date, dir_name)
+function [] = run_assembly_AF0(date, dir_name)
 
     import plantpollinator.distributions.PollinatorDistributions;
     import plantpollinator.distributions.PlantDistributions;
@@ -8,7 +8,7 @@ function [] = run_assembly_pop(date, dir_name)
 
     % Create a directory for storing this simulation in.
     output = sprintf('results/%s/%s', date, dir_name);
-    mkdir(output);
+    %mkdir(output);
     params_vector = [];
 
     for spc_plant_prob = 0:0.1:1
@@ -37,10 +37,11 @@ function [] = run_assembly_pop(date, dir_name)
     end
 
     % run simulation
-    run(params_vector);
+    %run(params_vector);
 
     % Get data from simulation
     plant_part_degree_2nd_3rd(params_vector, output);
     pol_part_degree_2nd_3rd(params_vector, output);
+    complete_network_data(params_vector, output);
     
 end

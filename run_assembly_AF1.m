@@ -1,4 +1,4 @@
-function [] = run_assembly_af(date, dir_name)
+function [] = run_assembly_AF1(date, dir_name)
 
     import plantpollinator.distributions.PollinatorDistributions;
     import plantpollinator.distributions.PlantDistributions;
@@ -42,5 +42,6 @@ function [] = run_assembly_af(date, dir_name)
     % Get data from simulation
     plant_part_degree_2nd_3rd(params_vector, output);
     pol_part_degree_2nd_3rd(params_vector, output);
+    complete_network_data(params_vector, output);
     
 end
